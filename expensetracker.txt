@@ -1,0 +1,23 @@
+# Daily Expense Tracker
+
+expenses = []
+
+while True:
+    item = input("Enter expense name (or 'done' to finish): ")
+
+    if item. Lower() == "done":
+        break
+
+    amount = float(input("Enter amount: "))
+    expenses. Append((item, amount))
+
+# Display expenses
+print("N\today's Expenses:")
+total = 0
+
+for item, amount in expenses:
+    print(f"{item}: ₹{amount:.2f}")
+    total += amount
+
+print("-" * 20)
+print(f"Total Spent: ₹{total:.2f}")
